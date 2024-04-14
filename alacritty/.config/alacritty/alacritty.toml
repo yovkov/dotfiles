@@ -1,0 +1,18 @@
+import = [
+    "~/.config/alacritty/themes/themes/kanagawa_wave.toml"
+]
+
+window.decorations = "Buttonless"
+window.opacity = 0.8
+window.blur = true
+window.padding = { x = 20, y = 20 }
+window.startup_mode = "SimpleFullscreen"
+
+window.option_as_alt = "OnlyLeft"
+
+font.size = 15
+font.normal = { family = "JetBrainsMonoNL NFM", style = "Regular"}
+font.bold = { family = "JetBrainsMonoNL NFM", style = "Bold"}
+font.italic = { family = "JetBrainsMonoNL NFM", style = "Italic"}
+font.bold_italic = { family = "JetBrainsMonoNL NFM", style = "Bold Italic"}
+font.offset = { x = 0, y = 4 }
