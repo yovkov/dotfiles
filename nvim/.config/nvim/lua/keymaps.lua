@@ -56,11 +56,11 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd("TextYankPost", {
-	desc = "Highlight when yanking (copying) text",
-	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-	callback = function()
-		vim.highlight.on_yank()
-	end,
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
 
 -- TODO: Evaluate if all the below are needed after Kickstart update
@@ -86,16 +86,16 @@ vim.keymap.set("i", "jj", "<Esc>")
 
 -- Obsidian
 vim.keymap.set("n", "<leader>oo", function()
-	local note_name = vim.fn.input("Note name: ")
-	local obsidian_path = "/Users/petaryovkov/Obsidian/deez-notes"
-	if note_name ~= "" then
-		vim.api.nvim_command(":e " .. obsidian_path .. "/" .. note_name .. ".md")
-	else
-		local today = os.date("%Y-%m-%d")
-		vim.api.nvim_command(":e " .. obsidian_path .. "/" .. today .. ".md")
-	end
-	vim.api.nvim_input("G")
-	vim.api.nvim_input("o")
+  local note_name = vim.fn.input("Note name: ")
+  local obsidian_path = "/Users/petaryovkov/Obsidian/deez-notes"
+  if note_name ~= "" then
+    vim.api.nvim_command(":e " .. obsidian_path .. "/" .. note_name .. ".md")
+  else
+    local today = os.date("%Y-%m-%d")
+    vim.api.nvim_command(":e " .. obsidian_path .. "/" .. today .. ".md")
+  end
+  vim.api.nvim_input("G")
+  vim.api.nvim_input("o")
 end)
 
 -- vim: ts=2 sts=2 sw=2 et

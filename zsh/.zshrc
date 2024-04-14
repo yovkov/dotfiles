@@ -1,6 +1,6 @@
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
-[ -f .aliases ] && source .aliases
+[ -f ~/.aliases ] && source ~/.aliases
 
 eval "$(zoxide init zsh)"
 
