@@ -1,0 +1,8 @@
+alias arti="php artisan"
+alias nd="npm run dev"
+alias x="exit"
+alias nv="nvim"
+alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
+alias nah="git reset --hard HEAD"
+alias spk="cat ~/.ssh/id_ed25519.pub | tee >(pbcopy)"
+
