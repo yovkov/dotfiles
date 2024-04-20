@@ -146,7 +146,7 @@ return {
         html = { filetypes = { "html", "twig", "hbs" } },
         -- phpactor = {},
         tailwindcss = {},
-        volar = {},
+        volar = {capabilities = capabilities},
         intelephense = { capabilities = capabilities },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --

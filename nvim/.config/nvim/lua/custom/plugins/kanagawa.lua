@@ -55,6 +55,10 @@ return {
                         TelescopePreviewNormal = { bg = "none" },
                         TelescopePreviewBorder = { fg = "#ffffff", bg = "none" },
                         MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+
+                        -- Change the background color for the visual and search highlights
+                        Visual = { bg = "#253C42" },
+                        -- Search = { bg = "#25283E" },
                     }
                 end,
                 theme = "wave",    -- Load "wave" theme when 'background' option is not set
