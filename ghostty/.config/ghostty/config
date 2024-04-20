@@ -1,0 +1,15 @@
+theme = "Oceanic-Next"
+background-opacity = 0.9
+background-blur-radius = 70
+
+macos-non-native-fullscreen = true
+
+font-size = 15
+font-thicken = true
+
+window-padding-x = 10
+window-padding-y = 5
+
+window-save-state = always
+
+macos-option-as-alt = true
