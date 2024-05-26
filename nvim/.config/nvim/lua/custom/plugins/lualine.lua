@@ -20,7 +20,8 @@ return {
 				"|",
 			},
 			lualine_c = {
-				{ "filename", path = 1 },
+				function() return " ▶▶▶ " end,
+				'g:mpv_title',
 			},
 			lualine_x = {
 				{

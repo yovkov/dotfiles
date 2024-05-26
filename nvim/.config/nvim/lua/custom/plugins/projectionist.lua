@@ -28,5 +28,6 @@ return {
                 },
             },
         }
+        vim.keymap.set('n', '<leader>ga', ':A<CR>', {desc = "Open alternate file"})
     end,
 }

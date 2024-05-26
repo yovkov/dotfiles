@@ -6,14 +6,14 @@ return {
       {
         "<leader>f",
         function()
-          require("conform").format({ async = true, lsp_fallback = true })
+          require("conform").format({ async = true, lsp_fallback = false })
         end,
         mode = "",
         desc = "[F]ormat buffer",
       },
     },
     opts = {
-      notify_on_error = false,
+      notify_on_error = true,
       format_on_save = false,
       formatters_by_ft = {
         lua = { "prettierd" },
@@ -22,7 +22,8 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        javascript = { { "prettierd", "prettier" } },
+        javascript = { { "prettier" } },
+        vue = { { "prettier" } },
         php = { { "pint", "php-cs-fixer" } },
       },
     },
