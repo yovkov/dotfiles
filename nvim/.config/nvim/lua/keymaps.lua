@@ -37,11 +37,11 @@ vim.keymap.set("n", "<leader>n", "<C-w>w", { desc = "Move focus to the next wind
 
 -- Quit/Save
 vim.keymap.set("n", "<leader>w", function()
-  CustomFunctions.play_sound("~/dotfiles/sounds/transition.wav")
+  -- CustomFunctions.play_sound("~/dotfiles/sounds/transition.wav")
   vim.cmd("w")
 end, { desc = "Save" })
 vim.keymap.set("n", "<leader>ww", function()
-  CustomFunctions.play_sound("~/dotfiles/sounds/transition.wav")
+  -- CustomFunctions.play_sound("~/dotfiles/sounds/transition.wav")
   vim.cmd("wa")
 end, { desc = "Save All" })
 vim.keymap.set("n", "<leader>wq", ":wqa<CR>", { desc = "Save & Quit all" })
@@ -54,7 +54,7 @@ vim.keymap.set("n", "[q", ":cp<CR>", { desc = "Previous quickfix item" })
 
 -- Nvim Tree
 vim.keymap.set("n", "<leader>e", function()
-  CustomFunctions.play_sound("~/dotfiles/sounds/panel.wav")
+  -- CustomFunctions.play_sound("~/dotfiles/sounds/panel.wav")
   vim.cmd("NvimTreeToggle")
 end, { silent = true })
 
@@ -94,8 +94,8 @@ vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv")
 vim.keymap.set("i", "jj", "<Esc>")
 
 -- Buffer navigation
-vim.keymap.set("n", "<TAB>", ":bnext<CR>", { desc = "Next buffer" })
-vim.keymap.set("n", "<S-TAB>", ":bprev<CR>", { desc = "Previous buffer" })
+-- vim.keymap.set("n", "<TAB>", ":bnext<CR>", { desc = "Next buffer" })
+-- vim.keymap.set("n", "<S-TAB>", ":bprev<CR>", { desc = "Previous buffer" })
 
 -- Obsidian
 vim.keymap.set("n", "<leader>oo", function()

@@ -142,7 +142,14 @@ return {
         html = { filetypes = { "html", "twig", "hbs" } },
         -- phpactor = {},
         tailwindcss = {},
-        volar = {},
+        volar = {
+          filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+        },
+        tsserver = {
+          single_file_support = false,
+        },
+        denols = {
+        },
         intelephense = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --

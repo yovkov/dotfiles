@@ -65,8 +65,8 @@ return {
           layout_config = {
             vertical = { width = 0.5 },
             horizontal = {
-              width = 0.6,
-              height = 0.6
+              width = 0.9,
+              height = 0.9
             },
             prompt_position = 'top',
             -- other layout configuration here
@@ -114,17 +114,17 @@ return {
       vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
       vim.keymap.set("n", "<leader>sk", builtin.keymaps, { desc = "[S]earch [K]eymaps" })
       vim.keymap.set("n", "<leader>sf", function ()
-        CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
+        -- CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
         builtin.find_files()
       end, { desc = "[S]earch [F]iles" })
       vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "[S]earch [S]elect Telescope" })
       vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
       vim.keymap.set("n", "<leader>sg", function ()
-        CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
+        -- CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
         builtin.live_grep()
       end, { desc = "[S]earch by [G]rep" })
       vim.keymap.set("n", "<leader>ds", function ()
-        CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
+        -- CustomFunctions.play_sound("~/dotfiles/sounds/modal.wav")
         builtin.lsp_document_symbols()
       end, { desc = "[D]ocument [S]ymbols" })
       vim.keymap.set(

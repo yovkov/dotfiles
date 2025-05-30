@@ -14,7 +14,7 @@ return {
     },
     opts = {
       notify_on_error = true,
-      format_on_save = false,
+      format_on_save = true,
       formatters_by_ft = {
         lua = { "prettierd" },
         -- Conform can also run multiple formatters sequentially

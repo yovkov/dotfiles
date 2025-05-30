@@ -6,7 +6,7 @@ window.decorations = "Buttonless"
 window.opacity = 0.8
 window.blur = true
 window.padding = { x = 20, y = 20 }
-window.startup_mode = "SimpleFullscreen"
+window.startup_mode = "Maximized"
 
 window.option_as_alt = "OnlyLeft"
 
