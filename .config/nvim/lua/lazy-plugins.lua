@@ -18,6 +18,9 @@ require('lazy').setup({
   -- keys can be used to configure plugin behavior/loading/etc.
   --
   -- Use `opts = {}` to force a plugin to be loaded.
+  { 'rcarriga/nvim-notify', opts ={
+    background_colour = "#000000"
+  }},
   --
   --  This is equivalent to:
   --    require('Comment').setup({})

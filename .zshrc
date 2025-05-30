@@ -24,3 +24,6 @@ prompt pure
 # Added by Windsurf
 export PATH="/Users/petaryovkov/.codeium/windsurf/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/yovkov/.codeium/windsurf/bin:$PATH"
