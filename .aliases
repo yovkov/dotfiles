@@ -1,6 +1,6 @@
 alias x="exit"
 alias nv="nvim"
-alias spk="cat ~/.ssh/id_ed25519.pub | tee >(pbcopy)"
+alias pk="cat ~/.ssh/id_ed25519.pub | tee >(pbcopy)"
 
 alias arti="php artisan"
 alias nd="npm run dev"
