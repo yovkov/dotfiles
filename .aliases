@@ -1,0 +1,15 @@
+alias x="exit"
+alias nv="nvim"
+alias spk="cat ~/.ssh/id_ed25519.pub | tee >(pbcopy)"
+
+alias arti="php artisan"
+alias nd="npm run dev"
+alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
+
+alias gs="git status"
+alias gf="git fetch"
+alias gco="git checkout"
+alias nah="git reset --hard HEAD"
+
+alias gd="ghostty +show-config --default --docs | nvim -"
+
